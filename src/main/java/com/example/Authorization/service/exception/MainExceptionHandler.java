@@ -1,4 +1,4 @@
-package com.example.Authorization.service.Exception;
+package com.example.Authorization.service.exception;
 
 
 import org.springframework.http.HttpStatus;

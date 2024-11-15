@@ -1,4 +1,4 @@
-package com.example.Authorization.service.Exception;
+package com.example.Authorization.service.exception;
 
 public class UnauthorizedUser extends RuntimeException {
     public UnauthorizedUser(String msg) {

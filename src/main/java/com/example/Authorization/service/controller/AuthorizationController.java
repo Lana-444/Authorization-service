@@ -1,4 +1,4 @@
-package com.example.Authorization.service.Controller.Repository;
+package com.example.Authorization.service.controller;
 
 import com.example.Authorization.service.Authorities;
 import com.example.Authorization.service.service.AuthorizationService;
@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 public class AuthorizationController {
-    AuthorizationService service;
+    private final AuthorizationService service;
 
     public AuthorizationController(AuthorizationService service) {
         this.service = service;

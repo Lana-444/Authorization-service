@@ -1,4 +1,4 @@
-package com.example.Authorization.service.service;
+package com.example.Authorization.service.repository;
 
 import com.example.Authorization.service.Authorities;
 import org.springframework.stereotype.Repository;

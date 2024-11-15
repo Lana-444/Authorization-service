@@ -1,8 +1,9 @@
 package com.example.Authorization.service.service;
 
 import com.example.Authorization.service.Authorities;
-import com.example.Authorization.service.Exception.InvalidCredentials;
-import com.example.Authorization.service.Exception.UnauthorizedUser;
+import com.example.Authorization.service.exception.InvalidCredentials;
+import com.example.Authorization.service.exception.UnauthorizedUser;
+import com.example.Authorization.service.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.List;
 
 @Service
 public class AuthorizationService {
-    UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     public AuthorizationService(UserRepository userRepository) {
