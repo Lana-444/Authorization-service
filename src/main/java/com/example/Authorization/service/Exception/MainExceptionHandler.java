@@ -15,7 +15,7 @@ public class MainExceptionHandler {
 
     @ExceptionHandler(UnauthorizedUser.class)
     public ResponseEntity<String> handleUnauthorizedUser(UnauthorizedUser ex) {
-        System.out.println(ex.getMessage());
+        System.out.println("Unauthorized access attempt: " + ex.getMessage());
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(ex.getMessage());
     }
 }
